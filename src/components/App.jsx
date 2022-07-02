@@ -18,7 +18,7 @@ export class App extends Component {
     filter: '',
   };
 
-  addContacts = (name, number) => {
+  addContacts = ({ name, number }) => {
     const errorName = this.state.contacts.find(
       contact => contact.name === name
     );
