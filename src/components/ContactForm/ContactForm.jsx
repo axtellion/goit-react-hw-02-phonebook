@@ -1,4 +1,5 @@
 import { Formik, ErrorMessage } from 'formik';
+import PropTypes from 'prop-types';
 import {
   Title,
   Text,
@@ -66,3 +67,7 @@ export class ContactForm extends Component {
     );
   }
 }
+
+ContactForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};
